@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{% block title %} {% endblock %} - FlaskApp - Log-in</title>
+    </head>
+    <style>
+        body{
+            background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/11/15-Presentation-Background-Examples10.png');
+        }
+        div{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <body>
+        <h2>Please enter your username and password.</h2>
+        <form method="post">
+            <p><input type=text name=username>
+            <p><input type=text name=password>
+            <p><input type=submit value=Login>
+        </form>
+    </body>
+</html>

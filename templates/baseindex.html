@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock %} - Welcome</title>
+    <style>
+        body{
+            background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/11/15-Presentation-Background-Examples10.png');
+        }
+        nav a{
+            background-color: aliceblue;
+            color: rgb(118, 26, 238);
+            font-size: 1em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        div.a{
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('login') }}">Log-in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="a">
+      <h1>Welcome!</h1>
+      <h3><p>Please log-in.</p></h3>
+      <p>This app is currently on development (it was super hard to make).</p>
+    </div>
+  </body>
+</html>
