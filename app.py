@@ -28,8 +28,8 @@ def logout():
 def hello():
     if session['username'] == 'Diego' and session['password'] == 'dormircestbien':
         return render_template('hello.html', utc_dt=datetime.datetime.utcnow())
-    else:
-        return redirect(url_for('index'))
+
+    return redirect(url_for('index'))
 @app.route('/about/')
 def about():
     return render_template('about.html')
