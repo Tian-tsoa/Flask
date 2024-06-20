@@ -49,7 +49,7 @@ def greet_user(user_id):
 @app.route('/comments/')
 def comments():
     comments = ['This thing is more complicated than expected...',
-                'I am commenting.',
+                '5/5!!!! Best app ever!!!!! <3 <3 <3',
                 'Uhm... well...',
                 'No inspiration...'
                 ]
