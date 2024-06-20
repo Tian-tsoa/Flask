@@ -26,7 +26,10 @@ def logout():
     return redirect(url_for('index'))
 @app.route('/hello/')
 def hello():
-    return render_template('hello.html', utc_dt=datetime.datetime.utcnow())
+    if session['username'] == 'Diego' and session['password'] == 'dormircestbien':
+        return render_template('hello.html', utc_dt=datetime.datetime.utcnow())
+    else:
+        return redirect(url_for('index'))
 @app.route('/about/')
 def about():
     return render_template('about.html')
